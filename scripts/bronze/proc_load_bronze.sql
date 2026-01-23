@@ -86,11 +86,11 @@ BEGIN
 		PRINT '--------------------------------------------';
 
 		SET @start_time = GETDATE();
-		PRINT '>> Truncating Table: erp_custaz12';
-		TRUNCATE TABLE bronze.erp_custaz12;
-
-		PRINT '>> Insert Table Data: bronze.erp_custaz12';
-		BULK INSERT bronze.erp_custaz12
+		PRINT '>> Truncating Table: erp_custaz_12';
+		TRUNCATE TABLE bronze.erp_cust_az12;
+		
+		PRINT '>> Insert Table Data: bronze.erp_cust_az12';
+		BULK INSERT bronze.erp_cust_az12
 		FROM 'C:\Users\BuggR\OneDrive\Documents\sql-data-warehouse-project\datasets\source_erp\CUST_AZ12.csv'
 		WITH (
 			FIRSTROW = 2,
